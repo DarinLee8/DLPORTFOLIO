@@ -35,8 +35,8 @@ body {
     display: inline-block;
     padding: 20px 30px; /* Adjust as needed */
     border-radius: 50px; /* Makes it circular */
-    background-color: #ff6347; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
     font-size: 1.2rem; /* Button text size */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s ease, transform 0.3s ease;
