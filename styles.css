@@ -14,6 +14,31 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 20px 30px; /* Adjust as needed */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #ff6347; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 1.2rem; /* Button text size */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ffa07a; /* Button background color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
 /* Sidebar styling */
 #sidebar {
     position: fixed;
