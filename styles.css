@@ -6,12 +6,47 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+#sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+#sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    margin: 20px 0;
+}
+
+#sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#main-content {
+    margin-left: 220px; /* Make space for the sidebar */
+}
+
 .page {
     height: 100vh; /* Full viewport height for each section */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 40px;
 }
 
 .page:nth-child(even) {
@@ -44,6 +79,22 @@ body {
 }
 
 #home .contact-button:hover {
-    background-color: #ffa07a; /* Button background color on hover */
+    background-color: #46bb94; /* Button background color on hover */
     transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Skill progress bars */
+.skill {
+    margin: 20px 0;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #46bb94;
 }
