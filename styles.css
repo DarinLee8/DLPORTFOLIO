@@ -7,7 +7,7 @@ body {
 }
 
 #sidebar {
-    width: 150px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -144,4 +144,71 @@ body {
 .progress-bar {
     height: 20px;
     background-color: #46bb94;
+}
+
+
+.page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.circle {
+    position: absolute;
+    width: 200px; /* Diameter of circles */
+    height: 200px;
+    border-radius: 50%; /* Make circles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1); /* Grow slightly on hover */
+}
+
+.about {
+    top: 50px;
+    left: 50px;
+    background-color: #46bb94; /* Green */
+}
+
+.resume {
+    top: 50px;
+    right: 50px;
+    background-color: #3498db; /* Blue */
+}
+
+.projects {
+    bottom: 50px;
+    left: 50px;
+    background-color: #f39c12; /* Orange */
+}
+
+.contact {
+    bottom: 50px;
+    right: 50px;
+    background-color: #e74c3c; /* Red */
+}
+
+.central-circle {
+    position: absolute;
+    width: 300px; /* Diameter of central circle */
+    height: 300px;
+    border-radius: 50%; /* Circular shape */
+    background-color: #ccc; /* Placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 150px); /* Center vertically */
+    left: calc(50% - 150px); /* Center horizontally */
+    z-index: 10; /* Ensure it's above other circles */
 }
