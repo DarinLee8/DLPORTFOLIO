@@ -14,7 +14,10 @@ body {
     height: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sidebar nav ul {
@@ -29,7 +32,10 @@ body {
 #sidebar nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjusted for smaller sidebar */
+    text-align: center;
+    display: block;
+    padding: 10px;
 }
 
 #sidebar nav ul li a:hover {
@@ -37,7 +43,7 @@ body {
 }
 
 #main-content {
-    margin-left: 220px; /* Make space for the sidebar */
+    margin-left: 120px; /* Adjusted for the smaller sidebar */
 }
 
 .page {
@@ -65,21 +71,62 @@ body {
     margin: 0 auto;
 }
 
+/* Styling for the home page background and overlay */
+#home {
+    background: url('background.jpg') no-repeat center center/cover; /* Replace 'background.jpg' with your image */
+    position: relative;
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content {
+    color: #ffffff;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#home h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#home h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 /* Styling for the contact button in the middle of the home page */
 #home .contact-button {
     display: inline-block;
-    padding: 20px 30px; /* Adjust as needed */
-    border-radius: 50px; /* Makes it circular */
-    background-color: #ffffff; /* Button background color */
-    color: #000000; /* Button text color */
+    padding: 15px 30px; /* Adjusted padding for better fit */
+    border-radius: 30px; /* Adjusted border radius */
+    background-color: transparent;
+    border: 2px solid #46bb94; /* Outline with border */
+    color: #46bb94; /* Text color to match the border */
     font-size: 1.2rem; /* Button text size */
     text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     margin-top: 20px; /* Adjust button position */
 }
 
 #home .contact-button:hover {
     background-color: #46bb94; /* Button background color on hover */
+    color: #ffffff; /* Button text color on hover */
     transform: scale(1.1); /* Scale effect on hover */
 }
 
