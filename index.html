@@ -12,6 +12,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -19,36 +20,65 @@
         </nav>
     </aside>
     <div id="main-content">
-        <section id="home">
+        <section id="home" class="page">
             <h3>Welcome to my portfolio!</h3>
-            <h1> I'm Darin Lee</h1>
+            <h1>I'm Darin Lee</h1>
             <a href="#contact" class="contact-button">Contact Me</a>
         </section>
-        
-        </section>
-        <section id="about">
+        <section id="about" class="page">
             <h2>About Me</h2>
             <p>Introduce yourself here...</p>
         </section>
-        <section id="resume">
+        <section id="skills" class="page">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+        </section>
+        <section id="resume" class="page">
             <h2>Resume</h2>
             <p>Resume details...</p>
         </section>
-        <section id="portfolio">
+        <section id="portfolio" class="page">
             <h2>Portfolio</h2>
             <div class="project">
                 <h3>Project Title</h3>
+                <img src="project1.jpg" alt="Project 1">
                 <p>Project description...</p>
+                <a href="http://example.com" target="_blank">View Project</a>
             </div>
-            <!-- Add more projects as needed -->
         </section>
-        <section id="contact">
+        <section id="contact" class="page">
             <h2>Contact</h2>
-            <p>Contact information...</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </div>
     <footer>
         <p>© 2024 DARIN LEE. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
