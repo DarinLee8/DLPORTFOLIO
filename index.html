@@ -9,26 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <div class="text">
-                <span class="hi">Hi,</span>
-                <span class="name">I'm Darin Lee</span>
-                <div class="buttons">
-                    <a href="#about" class="btn btn-about">About Me</a>
-                    <a href="#resume" class="btn btn-resume">Resume</a>
-                    <a href="#portfolio" class="btn btn-portfolio">Portfolio</a>
-                    <a href="#contact" class="btn btn-contact">Contact</a>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="home" class="section home">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <span class="hi">Hi,</span>
+                    <span class="name">I'm Darin Lee</span>
                 </div>
-            </div>
-            <div class="portrait">
-                <img src="https://via.placeholder.com/150" alt="Portrait of Darin Lee">
+                <div class="portrait">
+                    <img src="https://via.placeholder.com/150" alt="Portrait of Darin Lee">
+                </div>
             </div>
         </div>
     </div>
-    <div id="about" class="section">About Me Section</div>
-    <div id="resume" class="section">Resume Section</div>
-    <div id="portfolio" class="section">Portfolio Section</div>
-    <div id="contact" class="section">Contact Section</div>
+    <div id="about" class="section about">
+        <h1>About Me</h1>
+        <p>This is the About Me section.</p>
+    </div>
+    <div id="resume" class="section resume">
+        <h1>Resume</h1>
+        <p>This is the Resume section.</p>
+    </div>
+    <div id="portfolio" class="section portfolio">
+        <h1>Portfolio</h1>
+        <p>This is the Portfolio section.</p>
+    </div>
+    <div id="contact" class="section contact">
+        <h1>Contact</h1>
+        <p>This is the Contact section.</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
