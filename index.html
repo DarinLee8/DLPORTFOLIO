@@ -3,77 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Darin Lee</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <aside id="sidebar">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <div id="main-content">
-        <section id="home" class="page">
-            <div class="circle about">
-                <a href="#about">About</a>
-            </div>
-            <div class="circle resume">
-                <a href="#resume">Resume</a>
-            </div>
-            <div class="circle projects">
-                <a href="#projects">Projects</a>
-            </div>
-            <div class="circle contact">
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="central-circle">
-                <!-- Placeholder for your photo or icon -->
-            </div>
-        </section>
-        
-        
-        <section id="about" class="page">
-            <h1>About Me</h1>
-            <p>I'm a fourth-year student pursuing a degree in Business Information Management at the University of California, Irvine. My academic journey began at Santiago Canyon College, where I developed foundational skills in computer science before transferring to UCI. 
-
-                During my time at UCI, I've delved into various facets of management and computer science, with a particular focus on courses offered by the Paul Merage School of Business and the Donald Bren School of Information and Computer Sciences.
-                
-                Throughout my academic journey, I've gained valuable experience in teamwork and project management. Collaborative group projects, which often involved interviewing TAs and developing intricate programs, have honed my ability to meet deadlines and meticulously follow instructions to achieve excellent results.
-                
-                Currently, I work as a part-time associate at In-N-Out, where I'm responsible for taking customer orders and ensuring they are made to perfection. At In-N-Out, my role extends beyond the kitchen. I proactively engage with customers in the dining room, ensuring their experience meets our quality standards. Additionally, I take on a mentoring role, helping train associates to enhance their skills and knowledge. I find it rewarding to assist them in their development, enabling them to achieve raises and grow in their roles within the organization. My dedication to customer satisfaction and my commitment to team development have been integral to my success at In-N-Out. This was evident when I received an exceptional score of 102/100 from our store's mystery shopper program, an achievement unmatched in my specific store for the past five years.
-                
-                Previously, I contributed to the success of REI as a sales associate from 2020 to 2021. I excelled as the leading associate in sales for specific products over two distinct periods. In this role, I enjoyed recommending customers suitable products and helping them find the best deals to meet their needs.
-                
-                Beyond academics, I find exhilaration in the winter by strapping on my snowboard and hitting the slopes at Big Bear. 
-                
-                I'm passionate about leveraging my skills and knowledge to excel in what my future holds. Hopefully we can connect and explore opportunities to learn, grow, and achieve success together.</p>
-        </section>
-        <section id="resume" class="page">
-            <h2>Resume</h2>
-            <p>Resume details...</p>
-        </section>
-        <section id="portfolio" class="page">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <img src="project1.jpg" alt="Project 1">
-                <p>Project description...</p>
-                <a href="http://example.com" target="_blank">View Project</a>
-            </div>
-        </section>
-        <section id="contact" class="page">
-            <h2>Contact</h2>
-        </section>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </div>
-    <footer>
-        <p>© 2024 DARIN LEE. All rights reserved.</p>
-    </footer>
+
+    <div id="home" class="section home">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <span class="hi">Hi,</span>
+                    <span class="name">I'm Darin Lee</span>
+                </div>
+                <div class="portrait">
+                    <img src="https://via.placeholder.com/150" alt="Portrait of Darin Lee">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section about">
+        <h1>About Me</h1>
+        <p>This is the About Me section.</p>
+    </div>
+    <div id="resume" class="section resume">
+        <h1>Resume</h1>
+        <p>This is the Resume section.</p>
+    </div>
+    <div id="portfolio" class="section portfolio">
+        <h1>Portfolio</h1>
+        <p>This is the Portfolio section.</p>
+    </div>
+    <div id="contact" class="section contact">
+        <h1>Contact</h1>
+        <p>This is the Contact section.</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,214 +1,97 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-#sidebar {
-    width: 200px;
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
     position: fixed;
     top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    z-index: 10;
 }
 
-#sidebar nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-#sidebar nav ul li {
-    margin: 20px 0;
-}
-
-#sidebar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem; /* Adjusted for smaller sidebar */
-    text-align: center;
+.navbar a {
+    float: left;
     display: block;
-    padding: 10px;
-}
-
-#sidebar nav ul li a:hover {
-    text-decoration: underline;
-}
-
-#main-content {
-    margin-left: 120px; /* Adjusted for the smaller sidebar */
-}
-
-.page {
-    height: 100vh; /* Full viewport height for each section */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
     text-align: center;
-    padding: 40px;
-}
-
-.page:nth-child(even) {
-    background-color: #f0f0f0; /* Alternate background color */
-}
-
-.page h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.page p {
-    font-size: 1.5rem;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Styling for the home page background and overlay */
-#home {
-    background: url('background.jpg') no-repeat center center/cover; /* Replace 'background.jpg' with your image */
-    position: relative;
-}
-
-#home .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#home .content {
-    color: #ffffff;
-    max-width: 600px;
-    padding: 20px;
-}
-
-#home h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#home h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-}
-
-#home p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-/* Styling for the contact button in the middle of the home page */
-#home .contact-button {
-    display: inline-block;
-    padding: 15px 30px; /* Adjusted padding for better fit */
-    border-radius: 30px; /* Adjusted border radius */
-    background-color: transparent;
-    border: 2px solid #46bb94; /* Outline with border */
-    color: #46bb94; /* Text color to match the border */
-    font-size: 1.2rem; /* Button text size */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px; /* Adjust button position */
-}
-
-#home .contact-button:hover {
-    background-color: #46bb94; /* Button background color on hover */
-    color: #ffffff; /* Button text color on hover */
-    transform: scale(1.1); /* Scale effect on hover */
-}
-
-/* Skill progress bars */
-.skill {
-    margin: 20px 0;
-}
-
-.progress {
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.progress-bar {
-    height: 20px;
-    background-color: #46bb94;
-}
-
-
-.page {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #f0f0f0; /* Light background color */
-}
-
-.circle {
-    position: absolute;
-    width: 200px; /* Diameter of circles */
-    height: 200px;
-    border-radius: 50%; /* Make circles */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #fff;
+    padding: 14px 16px;
     text-decoration: none;
-    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.circle:hover {
-    transform: scale(1.1); /* Grow slightly on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.home {
+    background-color: #f4f4f4;
 }
 
 .about {
-    top: 50px;
-    left: 50px;
-    background-color: #46bb94; /* Green */
+    background-color: #e8f5e9;
 }
 
 .resume {
-    top: 50px;
-    right: 50px;
-    background-color: #3498db; /* Blue */
+    background-color: #e3f2fd;
 }
 
-.projects {
-    bottom: 50px;
-    left: 50px;
-    background-color: #f39c12; /* Orange */
+.portfolio {
+    background-color: #fff3e0;
 }
 
 .contact {
-    bottom: 50px;
-    right: 50px;
-    background-color: #e74c3c; /* Red */
+    background-color: #fce4ec;
 }
 
-.central-circle {
-    position: absolute;
-    width: 300px; /* Diameter of central circle */
-    height: 300px;
-    border-radius: 50%; /* Circular shape */
-    background-color: #ccc; /* Placeholder color */
+.container {
+    text-align: center;
+}
+
+.content {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    top: calc(50% - 150px); /* Center vertically */
-    left: calc(50% - 150px); /* Center horizontally */
-    z-index: 10; /* Ensure it's above other circles */
+    gap: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hi {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 400;
+}
+
+.name {
+    font-size: 2.5em;
+    color: #333;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+}
+
+.portrait img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
