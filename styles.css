@@ -1,4 +1,4 @@
-body, html {
+.body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -41,6 +41,81 @@ body, html {
 
 .home {
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubbles {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bubble {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    background-color: #2196F3;
+}
+
+.resume {
+    background-color: #4CAF50;
+}
+
+.portfolio {
+    background-color: #FFC107;
+}
+
+.contact {
+    background-color: #FF5722;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portrait {
+    margin-right: 50px;
+}
+
+.portrait img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hi {
+    font-size: 2em;
+    color: #555;
+    font-weight: 400;
+}
+
+.name {
+    font-size: 3em;
+    color: #333;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
 }
 
 .about {
@@ -57,41 +132,4 @@ body, html {
 
 .contact {
     background-color: #fce4ec;
-}
-
-.container {
-    text-align: center;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.hi {
-    font-size: 1.5em;
-    color: #555;
-    font-weight: 400;
-}
-
-.name {
-    font-size: 2.5em;
-    color: #333;
-    font-family: 'Lobster', cursive;
-    font-weight: 700;
-}
-
-.portrait img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
 }
