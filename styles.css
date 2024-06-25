@@ -1,4 +1,4 @@
-.body, html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -13,6 +13,12 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    top: -60px; /* initially hide the navbar above the viewport */
+    transition: top 0.3s; /* smooth transition when showing/hiding */
+}
+
+.navbar.show {
+    top: 0; /* show the navbar when scrolled down */
 }
 
 .navbar a {
@@ -64,29 +70,27 @@
     font-weight: bold;
     color: white;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.5); /* Darken the bubbles */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
 }
 
 .bubble:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darken more on hover */
     transform: scale(1.1); /* Scale up on hover */
 }
 
 .about {
-    background-color: #187bcc;
+    background-color: #1a73e8; /* Darken the About bubble */
 }
 
 .resume {
-    background-color: #3e9441;
+    background-color: #388e3c; /* Darken the Resume bubble */
 }
 
 .portfolio {
-    background-color: #dfaa0e;
+    background-color: #ffb300; /* Darken the Portfolio bubble */
 }
 
 .contact {
-    background-color: #e0481a;
+    background-color: #d84315; /* Darken the Contact bubble */
 }
 
 .container {
@@ -100,9 +104,9 @@
 }
 
 .portrait img {
-    border-radius: 55%;
-    width: 200px;
-    height: 200px;
+    border-radius: 50%;
+    width: 200px; /* Increase the size of the image placeholder */
+    height: 200px; /* Increase the size of the image placeholder */
     object-fit: cover;
 }
 
@@ -116,13 +120,14 @@
     font-size: 2em;
     color: #555;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif; /* Ensure the same font for both texts */
 }
 
 .name {
-    font-size: 3em;
+    font-size: 2.5em; /* Reduce font size for consistency */
     color: #333;
-    font-family: 'Lobster', cursive;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif; /* Ensure the same font for both texts */
 }
 
 .about {
