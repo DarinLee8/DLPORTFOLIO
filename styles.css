@@ -74,19 +74,19 @@
 }
 
 .about {
-    background-color: #2196F3;
+    background-color: #187bcc;
 }
 
 .resume {
-    background-color: #4CAF50;
+    background-color: #3e9441;
 }
 
 .portfolio {
-    background-color: #FFC107;
+    background-color: #dfaa0e;
 }
 
 .contact {
-    background-color: #FF5722;
+    background-color: #e0481a;
 }
 
 .container {
@@ -100,9 +100,9 @@
 }
 
 .portrait img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border-radius: 55%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
