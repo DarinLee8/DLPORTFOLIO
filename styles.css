@@ -1,7 +1,6 @@
-.body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
@@ -9,19 +8,25 @@
 .navbar {
     width: 100%;
     background-color: #333;
+    color: white;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: -60px; /* initially hide the navbar above the viewport */
+    transition: top 0.3s; /* smooth transition when showing/hiding */
     z-index: 10;
+}
+
+.navbar.show {
+    top: 0; /* show the navbar when scrolled down */
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: white;
 }
 
 .navbar a:hover {
