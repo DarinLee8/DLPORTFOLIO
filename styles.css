@@ -1,6 +1,7 @@
-body {
+.body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
@@ -8,25 +9,19 @@ body {
 .navbar {
     width: 100%;
     background-color: #333;
-    color: white;
     overflow: hidden;
     position: fixed;
-    top: -60px; /* initially hide the navbar above the viewport */
-    transition: top 0.3s; /* smooth transition when showing/hiding */
+    top: 0;
     z-index: 10;
-}
-
-.navbar.show {
-    top: 0; /* show the navbar when scrolled down */
 }
 
 .navbar a {
     float: left;
     display: block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
 }
 
 .navbar a:hover {
@@ -69,6 +64,13 @@ body {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the bubbles */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.bubble:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken more on hover */
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 .about {
